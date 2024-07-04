@@ -109,8 +109,8 @@ const Pizzeria: React.FC = () => {
             </h1>
           </div>
           <div className="flex w-full sm:w-2/4  justify-end pr-4 pb-4">
-            <div className="w-full sm:w-2/4 bg-gray-200 p-4 rounded-lg sm:bg-opacity-100 bg-opacity-50">
-              <h2 className="text-2xl font-bold mb-4 text-gray-800">
+            <div className="w-full sm:w-2/4  p-4 rounded-lg sm:bg-opacity-100 bg-opacity-50">
+              <h2 className="text-2xl font-bold mb-4 text-white">
                 tipos de pizza
               </h2>
               <div className="sm:hidden">
@@ -120,7 +120,7 @@ const Pizzeria: React.FC = () => {
                      key={pizza}
                     className={`cursor-pointer p-2 m-2 rounded border border-gray-400 ${
                       selectedPizza === pizza
-                        ? "bg-blue-200 bg-opacity-40 text-white"
+                        ? "bg-blue-200 bg-opacity-80 text-gray-800 text-lg"
                         : "bg-gray-300 hover:bg-gray-400"
                     } transition-all duration-300`}
                     onClick={() =>
