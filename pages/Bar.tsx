@@ -91,7 +91,7 @@ const getImageFileName = (cocktail: string) => {
           </div>
 
           <div className="w-full flex flex-row-reverse">
-            <div className="w-2/4 flex-col justify-end bg-gray-600  px-10 rounded-lg ">
+            <div className="w-2/4 flex-col justify-end   px-10 rounded-lg ">
               <div>
                 <h2 className="text-center text-3xl py-8 text-white ">
                   Lista di cocktails
@@ -147,7 +147,7 @@ const getImageFileName = (cocktail: string) => {
           </div>
 
           <div className=" w-full flex flex-wrap">
-            <div className="w-full flex-col justify-end bg-gray-600  px-10 rounded-lg ">
+            <div className="w-full flex-col justify-end   px-10 rounded-lg ">
               <div>
                 <h2 className="text-center text-3xl py-8 text-white ">
                   Lista di cocktails
@@ -160,7 +160,7 @@ const getImageFileName = (cocktail: string) => {
                       key={cocktail}
                       className={`cursor-pointer p-2 m-2 rounded border border-gray-400 ${
                         selectedCocktail === cocktail
-                          ? "bg-blue-500 text-white"
+                          ? "bg-blue-500 text-white "
                           : "bg-gray-300 hover:bg-gray-400"
                       } transition-all duration-300`}
                       onClick={() => handleCocktailSelect(cocktail as keyof CocktailDescriptions)}
@@ -174,10 +174,10 @@ const getImageFileName = (cocktail: string) => {
                 </ul>
               </div>
             </div>
-            <div className="w-full flex justify-center flex-col items-center">
+            <div className="w-full pb-10 flex justify-center flex-col items-center">
               <h1 className="text-white text-center text-3xl p-4 pt-8">{selectedCocktail}</h1>
               <Image
-                className="w-2/4  object-cover rounded-full "
+                className="w-3/4  object-cover rounded-full "
                 src={`https://d30jr9d23oaba2.cloudfront.net/images/cocktails/${getImageFileName(selectedCocktail || "")}`}
                 alt="drink"
             width={1920} height={1080}
