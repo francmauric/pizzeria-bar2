@@ -45,7 +45,7 @@ export default function IndexParallax() {
             scale: scale5
         },
         {
-            src: spaguetti,
+            src: spaguetti3,
             scale: scale6
         },
         {
@@ -61,7 +61,7 @@ export default function IndexParallax() {
             scale: scale8
         },
         {
-            src: spaguetti3,
+            src: spaguetti,
             scale: scale9
         }
     ]

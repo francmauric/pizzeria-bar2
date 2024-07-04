@@ -54,7 +54,7 @@ export default function Ristorante() {
      
       <Banner />
      
-      <main className=' bg-gray-400'>
+      <main className=' bg-custom-gradient bg-radial-gradient'>
         {/* vista escritorio */}
         <h1 className='text-4xl text-center'>Menu</h1>
         

@@ -1,0 +1,12 @@
+/* styles.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer utilities {
+    .bg-custom-gradient {
+      --tw-gradient-from: #ff7e5f; /* Color de inicio */
+      --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, #feb47b); /* Color final */
+    }
+}
